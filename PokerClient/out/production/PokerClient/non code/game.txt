@@ -1,0 +1,53 @@
+
+
+game start:
+	generate deck (52 cards, randomize)
+	set big and small blinds amount
+	take money from players for blinds(id 0,1)
+	give all players 2 cards	
+	start first round
+
+
+first round:	
+	set turn for player id 2 (id 0 and 1 pay blinds, 2 is next player)
+	
+	repeat for all players
+		{get player action (call/raise/fold	}
+		{set turn for next player		}
+		-> change bet amount if raised
+		-> make sure all players bet the same amount
+	
+	start second round
+	
+
+
+second round:
+	deal 3 community cards
+	small blind player (id 0) has turn; 
+					can check, 
+					or bet (others will have to match)
+					or fold
+	
+	then player id 1 (big blind) has turn
+	can fold, call (match the bet) or raise
+
+	repeat for all remaining players
+		{get player action (call/raise/fold	}
+		{set turn for next player		}
+		-> make sure all players bet the same amount
+	
+	start third round
+
+
+third round:
+	repeat second round steps, but add 1 community card instead of 3
+	start forth round
+
+
+forth round:
+	repeat third round steps
+	after betting, remaining players show their cards
+	select best hand, pick winner
+	give all money in the pot to the winner
+	
+	->start new game?

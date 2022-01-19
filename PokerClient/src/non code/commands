@@ -1,0 +1,66 @@
+
+
+server -> client
+------------------------------------------------------------------------------------------------------------------------
+player exists                                   ; player name is taken by another player
+player allowed                                  ; successfully logged in
+player money <amount>                           ; amount of money player has
+
+lobby players initial <players>                 ; list of online players
+lobby players add <player>                      ; player to be added to list of online players
+lobby players remove <player>                   ; player to be removed from list of online players
+
+table failed                                    ; could not add to the table
+table success                                   ; successfully added to the table
+table update <table id> <number of players>     ; update number of players in a table
+table initial <id>                              ; table information containing number of players in table,
+              <players in table>                  max number allowed in table and initial bet value
+              <max players>
+              <bet>
+
+game data players <player names>                ; list of players in the table
+game data ingame <player names>                 ; list of players currently in game (not those who folded)
+game data update add <name>                     ; name of player who joined the table
+game data update remove <name>                  ; name of player who left the table
+
+game started <bet amount>                       ; game has started, including starting bet
+game end                                        ; game has ended
+game players <player names>                     ; list of players in the game
+game card <card rank> <card suit>               ; a game card for player
+game smallBlind <name>                          ; name of player who was selected to pay small blind
+game bigBlind <name>                            ; name of player who was selected to pay big blind
+
+game turn <name>                                ; name of player that has turn
+game action <actions>                           ; actions available to the player
+game potMoney <number>                          ; current amount of money in the pot
+game currentBet <number>                        ; current bet that players need to match
+game communityCard <card>                       ; community card
+game reveal_cards <name> <card>                 ; revealed player cards, at the end of the game
+game winner <name>                              ; name of player who won the pot
+game winners <names> <prize>                    ; in case there are more than 1 winner, names of players and prize they won
+
+game player_action bet <name> <number>          ; how much a player is betting
+game player_action call <name>                  ; player calls
+game player_action raise <name> <number>        ; player raises the current bet to <number>
+game player_action fold <name>                  ; player folds
+game player_action check <name>                 ; player checks
+
+------------------------------------------------------------------------------------------------------------------------
+
+client -> server
+
+player name <name>                              ; player name, after established connection
+player disconnected                             ; player closed the program
+lobby update                                    ; request to get latest table information
+
+
+joinTable <id>                                  ; request to join table with given id
+game leave                                      ; player left the game/table
+
+game action bet <number>                        ; how much a player is betting
+game action call                                ; player calls
+game action raise <number>                      ; player raises the current bet to <number>
+game action fold                                ; player folds
+game action check                               ; player checks
+game chat <message>                             ; chat message
+

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="ai.picovoice:picovoice-java:1.1.2" type="repository">
+    <properties maven-id="ai.picovoice:picovoice-java:1.1.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/picovoice-java-1.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/porcupine-java-1.9.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rhino-java-1.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
