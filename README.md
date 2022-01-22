@@ -34,7 +34,10 @@ The GUI has been made resizable, in order to allow players with various screen s
 the game. To ensure high performance, multithreading is used for client side as well, but only
 two threads are used; GUI and handler thread.
 
+## Things not yet implemented
 
+- Player account system and saving data
+- use of voice commands and webcams
 
 ## Usage requirements
 
