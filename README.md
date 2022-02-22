@@ -48,7 +48,5 @@ In order to use the system, the following requirements must be met:
 
 ## How to use
 
-Firstly run the server (PokerGame.jar) file on a machine you wish to be the server/host. It will be then start listening for incoming connections on port 8888.
-Then clients can connect via PokerClient.jar file, by inputting their player name and setting server IP address. The default IP address is localhost/local machine. 
-
-
+Firstly run the server (PokerGame.jar) file on a machine you wish to be the server/host. It will start listening for incoming connections on port 8888.
+Then the players should run client file (PokerClient.jar), input their player name and setting server's IP address. The default IP address is localhost/local machine.
