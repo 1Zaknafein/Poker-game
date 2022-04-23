@@ -20,6 +20,8 @@ cards - is automatically selected from a set of community cards (5) and player�
 then comparing them against other players’ hands. The winner is selected based on their hand
 ranking, which has been created according to the Poker’s Texas Hold’em rules.
 
+![poker_game](https://user-images.githubusercontent.com/98032843/164914186-ce9d88fd-40d3-4f77-915c-ff227c44cf03.jpg)
+
 ## Server side
 Server side handles most data processing, and is responsible for holding the state of tables,
 ongoing games and their logic, player and communication data. To achieve this with optimal
